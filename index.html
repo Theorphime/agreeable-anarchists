@@ -46,18 +46,25 @@ ANARCHISTS
         <p class="warning">No algorithms. No engagement optimization. No infinite scroll. No content. Just songs.</p>
       </section>
 
-      <section class="box signup-box">
-        <h2>join the tiny mailing list</h2>
-        <p>Leave your email and we’ll send demos, release notes, lyrics, stems, and other human-made noise.</p>
-        <form class="signup-form" action="#" method="post">
-          <label for="email">email address</label>
-          <div class="signup-row">
-            <input id="email" name="email" type="email" placeholder="you@example.com" required />
-            <button type="submit">subscribe</button>
-          </div>
-          <p class="form-note">No algorithms. No spam. No growth-hack ritual. Just indie band transmissions.</p>
-        </form>
-      </section>
+    <section class="box signup-box">
+      <h2>Join the repository</h2>
+      <p>Leave your email and we’ll send songs, stems, lyrics, weird updates, and signs of life.</p>
+
+        <iframe data-tally-src="https://tally.so/embed/44dEoA?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="200" frameborder="0" marginheight="0" marginwidth="0" title="Agreeable anarchists"></iframe>
+
+      <script>
+    var d=document,w="https://tally.so/widgets/embed.js",v=function(){
+      "undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){
+        e.src=e.dataset.tallySrc
+      })
+    };
+    if("undefined"!=typeof Tally)v();
+    else if(d.querySelector('script[src="'+w+'"]')==null){
+      var s=d.createElement("script");
+      s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);
+    }
+  </script>
+    </section>    
 
       <section class="box manifesto-preview">
         <h2>human-first license note</h2>
