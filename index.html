@@ -22,9 +22,6 @@ ANARCHISTS
         <a href="index.html">home</a>
         <a href="songs.html">repository</a>
         <a href="manifesto.html">README.md</a>
-        <a href="contribute.html">contribute</a>
-        <a href="guestbook.html">guestbook</a>
-        <a href="links.html">links</a>
       </nav>
 
       <div class="status-box">
@@ -49,14 +46,17 @@ ANARCHISTS
         <p class="warning">No algorithms. No engagement optimization. No infinite scroll. No content. Just songs.</p>
       </section>
 
-      <section class="box">
-        <h2>current release</h2>
-        <table class="release-table">
-          <tr><th>file</th><th>status</th><th>action</th></tr>
-          <tr><td>song_001_demo.mp3</td><td>unstable</td><td><a href="songs.html">listen</a></td></tr>
-          <tr><td>lyrics.txt</td><td>alive</td><td><a href="songs.html">read</a></td></tr>
-          <tr><td>stems.zip</td><td>coming soon</td><td><a href="contribute.html">fork</a></td></tr>
-        </table>
+      <section class="box signup-box">
+        <h2>join the tiny mailing list</h2>
+        <p>Leave your email and we’ll send demos, release notes, lyrics, stems, and other human-made noise.</p>
+        <form class="signup-form" action="#" method="post">
+          <label for="email">email address</label>
+          <div class="signup-row">
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <button type="submit">subscribe</button>
+          </div>
+          <p class="form-note">No algorithms. No spam. No growth-hack ritual. Just band transmissions.</p>
+        </form>
       </section>
 
       <section class="box manifesto-preview">
@@ -66,17 +66,11 @@ ANARCHISTS
         <p><a href="manifesto.html">read the README.md</a></p>
       </section>
 
-      <section class="box tiny-feed">
-        <h2>repository whispers</h2>
-        <p id="random-whisper">This repository is alive.</p>
-      </section>
-
       <footer>
         Built by humans. Maintained by humans. Broken by humans. Since 2026.
       </footer>
     </main>
   </div>
 
-  <script src="script.js"></script>
 </body>
 </html>
