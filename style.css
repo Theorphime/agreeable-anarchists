@@ -190,6 +190,28 @@ textarea {
   min-height: 120px;
 }
 
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.signup-row {
+  display: flex;
+  gap: 8px;
+}
+
+.signup-row input {
+  flex: 1;
+}
+
+.form-note {
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
 button {
   color: var(--acid);
   cursor: pointer;
@@ -219,5 +241,9 @@ footer {
   nav {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .signup-row {
+    flex-direction: column;
   }
 }
