@@ -3,81 +3,206 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Agreeable Anarchists // Repository Online</title>
-  <meta name="description" content="Agreeable Anarchists is a human-made open music repository. Download, cover, remix, translate, mutate, and credit where it came from." />
+
+  <meta
+    name="description"
+    content="Agreeable Anarchists is a human-made open music repository. Download, cover, remix, translate, mutate, and leave a trail back."
+  />
+
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
 </head>
+
 <body>
-  <div class="page-shell">
-    <aside class="sidebar">
-      <pre class="ascii-logo">
+
+<div class="page-shell">
+
+  <aside class="sidebar">
+
+<pre class="ascii-logo">
    /\_/\\
   ( o.o )
    > ^ <
 AGREEABLE
 ANARCHISTS
-      </pre>
+</pre>
 
-      <nav>
-        <a href="index.html">home</a>
-        <a href="songs.html">repository</a>
-        <a href="manifesto.html">README.md</a>
-      </nav>
+    <nav>
+      <a href="index.html">home</a>
+      <a href="songs.html">repository</a>
+      <a href="manifesto.html">README.md</a>
 
-      <div class="status-box">
-        <p>[✓] songs</p>
-        <p>[✓] lyrics</p>
-        <p>[✓] stems</p>
-        <p>[ ] world domination</p>
-      </div>
-    </aside>
+      <a
+        href="https://agreeable-anarchists-shop.fourthwall.com/"
+        target="_blank"
+        rel="noopener"
+      >
+        merch ↗
+      </a>
 
-    <main class="content">
-      <header class="terminal-header">
-        <p>AGREEABLE ANARCHISTS</p>
-        <p>repository online // build 0.03</p>
-        <p>last compiled: <span id="compiled-date">yesterday</span></p>
-      </header>
+    </nav>
 
-      <section class="hero box">
-        <h1>music should mutate.</h1>
-        <p>This repository exists so songs can escape their creators.</p>
-        <p>Download them. Sing them wrong. Translate them. Break them open. Make a version that frightens us.</p>
-        <p class="warning">No algorithms. No engagement optimization. No infinite scroll. No content. Just songs.</p>
-      </section>
+    <div class="status-box">
+      <p>[✓] songs</p>
+      <p>[✓] lyrics</p>
+      <p>[ ] stems</p>
+      <p>[ ] world domination</p>
+    </div>
+
+  </aside>
+
+  <main class="content">
+
+    <header class="terminal-header">
+      <p>AGREEABLE ANARCHISTS</p>
+      <p>repository online // build 0.04</p>
+      <p>last compiled: <span id="compiled-date">today</span></p>
+    </header>
+
+    <section class="hero box">
+
+      <h1>music should mutate.</h1>
+
+      <p>
+        This repository exists so songs can escape their creators.
+      </p>
+
+      <p>
+        Download them.
+        Sing them wrong.
+        Translate them.
+        Break them open.
+        Make a version that frightens us.
+      </p>
+
+      <p class="warning">
+        No algorithms.
+        No engagement optimization.
+        No infinite scroll.
+        No content.
+        Just songs.
+      </p>
+
+    </section>
+
+    <section class="box merch-preview">
+
+      <h2>wear the repository</h2>
+
+      <p>
+        Shirts, objects, and wearable evidence that this project
+        escaped the internet.
+      </p>
+
+      <p>
+        <a
+          href="https://agreeable-anarchists-shop.fourthwall.com/"
+          target="_blank"
+          rel="noopener"
+        >
+          enter the merch department ↗
+        </a>
+      </p>
+
+    </section>
 
     <section class="box signup-box">
-      <h2>Join the repository</h2>
-      <p>Leave your email and we’ll send songs, stems, lyrics, weird updates, and signs of life.</p>
 
-        <iframe data-tally-src="https://tally.so/embed/44dEoA?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="200" frameborder="0" marginheight="0" marginwidth="0" title="Agreeable anarchists"></iframe>
+      <h2>Join the repository</h2>
+
+      <p>
+        Leave your email and we'll send songs,
+        lyrics,
+        strange updates,
+        and signs of life.
+      </p>
+
+      <iframe
+        data-tally-src="https://tally.so/embed/44dEoA?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+        loading="lazy"
+        width="100%"
+        height="220"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Agreeable Anarchists"
+      ></iframe>
 
       <script>
-    var d=document,w="https://tally.so/widgets/embed.js",v=function(){
-      "undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){
-        e.src=e.dataset.tallySrc
-      })
-    };
-    if("undefined"!=typeof Tally)v();
-    else if(d.querySelector('script[src="'+w+'"]')==null){
-      var s=d.createElement("script");
-      s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);
-    }
-  </script>
-    </section>    
+        var d=document,
+        w="https://tally.so/widgets/embed.js",
+        v=function(){
+          if(typeof Tally!=="undefined"){
+            Tally.loadEmbeds();
+          }else{
+            d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){
+              e.src=e.dataset.tallySrc;
+            });
+          }
+        };
 
-      <section class="box manifesto-preview">
-        <h2>human-first license note</h2>
-        <p>Humans are invited to copy, cover, translate, remix, sample, and mutate our songs.</p>
-        <p>Corporations scraping culture to automate artists out of existence are not the audience.</p>
-        <p><a href="manifesto.html">read the README.md</a></p>
-      </section>
+        if(typeof Tally!=="undefined"){
+          v();
+        }else if(d.querySelector('script[src="'+w+'"]')==null){
+          var s=d.createElement("script");
+          s.src=w;
+          s.onload=v;
+          s.onerror=v;
+          d.body.appendChild(s);
+        }
+      </script>
 
-      <footer>
-        Built by humans. Maintained by humans. Broken by humans. Since 2026.
-      </footer>
-    </main>
-  </div>
+    </section>
+
+    <section class="box manifesto-preview">
+
+      <h2>human-first license</h2>
+
+      <p>
+        Humans are invited to copy,
+        cover,
+        translate,
+        remix,
+        sample,
+        and mutate our songs.
+      </p>
+
+      <p>
+        Leave a trail back here so others can discover where the song began.
+      </p>
+
+      <p>
+        Corporations scraping culture to automate artists out of existence
+        are not the audience.
+      </p>
+
+      <p>
+        <a href="manifesto.html">
+          read the README.md →
+        </a>
+      </p>
+
+    </section>
+
+    <footer>
+
+      <p>
+        Built by humans.
+        Maintained by humans.
+        Broken by humans.
+      </p>
+
+      <p>
+        Since 2026.
+      </p>
+
+    </footer>
+
+  </main>
+
+</div>
 
 </body>
 </html>
