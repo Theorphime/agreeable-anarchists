@@ -3,62 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Songs // Agreeable Anarchists</title>
+
+  <title>IFLA // Agreeable Anarchists</title>
+
+  <meta
+    name="description"
+    content="Listen to IFLA by Agreeable Anarchists, download the MP3, read the lyrics and chords, or fork the song."
+  />
+
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
 </head>
+
 <body>
   <div class="page-shell">
+
     <aside class="sidebar">
       <pre class="ascii-logo">AA://SONGS</pre>
-      <nav>
+
+      <nav aria-label="Main navigation">
         <a href="index.html">home</a>
-        <a href="songs.html">repository</a>
+        <a href="songs.html" aria-current="page">repository</a>
         <a href="manifesto.html">README.md</a>
       </nav>
     </aside>
 
     <main class="content">
+
       <header class="terminal-header">
-        <p>/repository/songs</p>
+        <p>/repository/songs/001-ifla</p>
         <p>all files are emotionally unstable</p>
       </header>
 
       <article class="song-card box">
-        <h1>Song 001: Just A Little Bit More</h1>
-        <p><strong>Status:</strong> demo release</p>
-        <p><strong>Mood:</strong> cute, angry, almost sorry</p>
+
+        <p class="song-number">SONG 001</p>
+
+        <h1>IFLA</h1>
+
+        <p>
+          <strong>Status:</strong>
+          first release
+        </p>
+
+        <p>
+          <strong>Mood:</strong>
+          satirical, dependent, suspiciously enthusiastic
+        </p>
+
+        <p>
+          <strong>Configuration:</strong>
+          capo 5 · C / G/B / Em
+        </p>
 
         <div class="download-grid">
-          <a href="#">🎵 Listen</a>
-          <a href="#">⬇ Download MP3</a>
-          <a href="#">⬇ Download WAV</a>
-          <a href="#">⬇ Download stems</a>
-          <a href="#">⬇ Guitar tabs</a>
-          <a href="#">⬇ Chords</a>
-          <a href="#">⬇ Lyrics</a>
-          <a href="#">⬇ MIDI</a>
+
+          <a
+            href="assets/songs/001-ifla/ifla.mp3"
+            target="_blank"
+            rel="noopener"
+          >
+            🎵 Listen
+          </a>
+
+          <a
+            href="assets/songs/001-ifla/ifla.mp3"
+            download
+          >
+            ⬇ Download MP3
+          </a>
+
+          <a href="assets/songs/001-ifla/lyrics-and-chords.html">
+            📄 Lyrics + chords
+          </a>
+
         </div>
 
         <section class="fork-box">
-          <h2>❤️ Make your own version</h2>
-          <p>We explicitly encourage covers, translations, remixes, sampling, and weird interpretations.</p>
-          <p>If your version grows from this song, please leave a trail back here and send it our way.</p>
-          <p><a href="mailto:hello@agreeableanarchists.com">Email us yours</a></p>
+          <h2>❤️ Fork this song</h2>
+
+          <p>
+            Translate it. Rearrange it. Sing it louder. Sing it worse.
+            Turn it into punk, jazz, techno, folk, noise, or something
+            we haven't imagined yet.
+          </p>
+
+          <p>
+            Remove half the lyrics. Add three new verses. Change the chords.
+            Keep only the part that made you laugh.
+          </p>
+
+          <p>
+            If your version grows from this song, please leave a trail back
+            here. We would love to add its descendant to the repository.
+          </p>
+
+          <p>
+            <a
+              href="mailto:hello@agreeableanarchists.com?subject=I forked IFLA"
+            >
+              Send us your version →
+            </a>
+          </p>
         </section>
+
+        <section class="commit-note">
+          <pre class="code-block">commit 001
+
+Initial release.
+
+Known bugs:
+- still capable of independent thought
+- requires internet connection
+- may contain traces of free will</pre>
+        </section>
+
       </article>
 
-      <article class="song-card box">
-        <h1>Song 002: Depravity</h1>
-        <p><strong>Status:</strong> writing in public</p>
-        <p><strong>Mood:</strong> addiction hymn, glitter in the ashtray</p>
-        <div class="download-grid muted">
-          <a href="#">lyrics soon</a>
-          <a href="#">demo soon</a>
-          <a href="#">stems soon</a>
-        </div>
-      </article>
+      <footer>
+        Repository checksum: probably haunted.
+      </footer>
 
-      <footer>Repository checksum: probably haunted.</footer>
     </main>
   </div>
 </body>
